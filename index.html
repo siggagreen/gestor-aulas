@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestión de Aulas y Salas</title>
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet"/>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f0f4f8; }
+    header { background: #203864; color: white; padding: 1rem; text-align: center; }
+    #calendar { max-width: 900px; margin: 2rem auto; background: white; padding: 1rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .logout { position: absolute; right: 20px; top: 20px; background: #e74c3c; color: white; border: none; padding: 0.5rem 1rem; cursor: pointer; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Reservación de Aulas y Salas</h1>
+    <button class="logout" onclick="logout()">Cerrar sesión</button>
+  </header>
+  <div id="calendar"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
